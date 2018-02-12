@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Enter your login and password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_weight="20"
+        android:layout_height="0dp"
+        android:textColor="#12a321"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:id="@+id/text" />
+    <EditText
+        android:layout_below="@id/logintext"
+        android:background="@drawable/edit_text_style"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:textColor="#1180d6"
+        android:textColorHint="#7b7e82"
+        android:hint="Login"
+        android:id="@+id/logintext" />
+    <EditText
+        android:layout_below="@id/logintext"
+        android:background="@drawable/edit_text_style"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:textColor="#1180d6"
+        android:textColorHint="#7b7e82"
+        android:hint="Password"
+        android:id="@+id/passwordtext" />
+    <Button
+        android:layout_below="@id/passwordtext"
+        android:text="Log in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginbutton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+</LinearLayout>
